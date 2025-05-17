@@ -1,75 +1,59 @@
-# Nuxt Minimal Starter
+# 🎵 Zikmu – Lecteur Audio YouTube façon Spotify
 
-Look at the [Nuxt documentation](https://nuxt.com/docs/getting-started/introduction) to learn more.
+Zikmu est une application web qui transforme les playlists YouTube en une expérience musicale moderne, dans une interface inspirée de Spotify.
 
-## Setup
+> ⚠️ Ce projet est fourni à des fins d'apprentissage, d'expérimentation et de prototypage. Il n'inclut aucun contenu audio ou musical hébergé directement.
 
-Make sure to install dependencies:
+---
 
-```bash
-# npm
-npm install
+## ✨ Fonctionnalités
 
-# pnpm
-pnpm install
+- 🖼 Affichage visuel type Spotify (header playlist, vignettes, durée)
+- 🎧 Contrôle de lecture : play, pause, seek, skip
+- 🕒 Slider de durée avec temps restant
+- 📜 Liste interactive des pistes d'une playlist YouTube
+- 📦 Backend intégré (via Nuxt server API)
 
-# yarn
-yarn install
+---
 
-# bun
-bun install
-```
+## 🧱 Stack technique
 
-## Development Server
+- [Nuxt 3 (Fullstack)](https://nuxt.com/)
+- [Vue 3](https://vuejs.org/)
+- [Tailwind CSS](https://tailwindcss.com/)
+- Server API en TypeScript (`/server/api/stream.ts`)
 
-Start the development server on `http://localhost:3000`:
+---
 
-```bash
-# npm
-npm run dev
+## 🧠 Comment ça fonctionne
 
-# pnpm
-pnpm dev
+Zikmu utilise :
 
-# yarn
-yarn dev
+- une interface Nuxt pour afficher et contrôler l’audio
+- un serveur intégré dans Nuxt (`/server/api/`) pour récupérer les flux audio depuis une URL YouTube (ex: `/api/stream?url=...`)
+- une playlist (YouTube) en entrée via son ID ou son lien
 
-# bun
-bun run dev
-```
+👉 Le projet **ne stocke aucun fichier audio** et ne contourne pas directement les services tiers. Tu es libre de brancher ta propre API de stream.
 
-## Production
+---
 
-Build the application for production:
+## ⚖️ À propos de la légalité
 
-```bash
-# npm
-npm run build
+Zikmu est fourni **sans outils d'extraction intégrés**.
 
-# pnpm
-pnpm build
+> Si tu ajoutes un module comme `ytdl-core`, tu es responsable de son usage et de sa conformité avec les CGU de YouTube et la législation en vigueur.
 
-# yarn
-yarn build
+Nous recommandons de l’utiliser **à titre privé ou expérimental**, ou de t’orienter vers des **sources de musique libres de droits** si tu veux rendre ton projet public.
 
-# bun
-bun run build
-```
+---
 
-Locally preview production build:
+## 📄 Licence
 
-```bash
-# npm
-npm run preview
+MIT — libre d’utilisation, modification et distribution, dans le respect des lois locales et des droits d’auteur.
 
-# pnpm
-pnpm preview
+---
 
-# yarn
-yarn preview
+## ❤️ Contributeur
 
-# bun
-bun run preview
-```
-
-Check out the [deployment documentation](https://nuxt.com/docs/getting-started/deployment) for more information.
+Développé avec passion par [Cyprien](https://x.com/cyptertrais)  
+Design inspiré de l’univers musical moderne 🎶
