@@ -1,4 +1,3 @@
-// server/api/stream.ts
 
 import { defineEventHandler, getQuery, sendStream, setHeader, getRequestHeaders } from 'h3'
 import ytdl from '@distube/ytdl-core'

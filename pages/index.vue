@@ -90,7 +90,7 @@
 <script setup>
 import { ref, onMounted, nextTick } from 'vue'
 
-const playlistId = 'PLW3fvG7VHxA49NyqqL6sZOSiBQ6uH0vl7' // remplace avec ton ID de playlist YouTube
+const playlistId = 'PLW3fvG7VHxA49NyqqL6sZOSiBQ6uH0vl7'
 
 const playlist = ref(null)
 const currentTrackIndex = ref(0)

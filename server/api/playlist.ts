@@ -1,4 +1,3 @@
-// server/api/playlist.ts
 
 import { defineEventHandler, getQuery } from 'h3'
 import ytpl from 'ytpl'
